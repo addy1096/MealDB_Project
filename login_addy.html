@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration and Login</title>
+  <link rel="stylesheet" type="text/css" href="styles_addy.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Registration</h2>
+    <form onsubmit="registerUser(event)">
+      <input type="text" id="regUsername" placeholder="Username" required>
+      <input type="password" id="regPassword" placeholder="Password" required>
+      <button type="submit">Register</button>
+    </form>
+
+    <h2>Login</h2>
+    <form onsubmit="loginUser(event)">
+      <input type="text" id="loginUsername" placeholder="Username" required>
+      <input type="password" id="loginPassword" placeholder="Password" required>
+      <button type="submit">Log In</button>
+    </form>
+
+    <p id="error-message"></p>
+  </div>
+
+  <script src="register_addy.js"></script>
+</body>
+</html>
